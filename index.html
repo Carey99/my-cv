@@ -3,176 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Edwin Akida's CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMx1t8u1fzP4S0hS7FfEKJ4ty3Y1Z4nQ3L4y8P" crossorigin="anonymous">
+    <title>Carey Edwin Akida - CV</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            line-height: 1.8;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
+            max-width: 950px;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        header {
+        h1, h2, h3 {
+            color: #555;
+        }
+
+        .header {
             text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #007BFF;
+            margin-bottom: 20px;
         }
 
-        header h1 {
-            color: #007BFF;
+        .header h1 {
+            font-size: 28px;
             margin: 0;
         }
 
-        header h2 {
-            color: #333;
-            margin: 5px 0 15px;
-        }
-
-        .contact-info p {
+        .header p {
             margin: 5px 0;
         }
 
-        .contact-info a {
-            color: #007BFF;
-            text-decoration: none;
+        .section {
+            margin-bottom: 20px;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin: 20px 0;
-        }
-
-        h3 {
-            color: #007BFF;
-            border-bottom: 2px solid #007BFF;
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #555;
             padding-bottom: 5px;
         }
 
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
 
         ul li {
-            margin: 5px 0;
+            margin-bottom: 10px;
+        }
+        ul ul {
+        list-style: disc; /* Adds bullets for nested lists */
+        margin-left: 20px; /* Indents the nested list */
         }
 
-        p {
-            line-height: 1.6;
-        }
 
-        .icon {
-            margin-right: 8px;
-            color: #007BFF;
+        .skills span {
+            display: inline-block;
+            margin-right: 10px;
+            background: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: large;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="header">
             <h1>Carey Edwin Akida</h1>
-            <h2>Software Engineer | Backend Developer </h2>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt icon"></i> 1039 Karen, Nairobi 00502</p>
-                <p><i class="fas fa-envelope icon"></i> <a href="mailto:edwinakidah1@gmail.com">edwinakidah1@gmail.com</a></p>
-                <p><i class="fas fa-phone-alt icon"></i> <a href="tel:+254769937229">+2547 6993 7229</a></p>
-                <p>
-                    <i class="fab fa-linkedin-in icon"></i>
-                    <a href="https://ceryakida.vercel.app/" target="_blank">Portfolio</a> |
-                    <a href="https://www.linkedin.com/in/carey-akida-a619911a8/" target="_blank">LinkedIn</a> | 
-                    <i class="fas fa-globe icon"></i>
-                    <a href="https://github.com/Carey99" target="_blank">GitHub</a>
-                </p>
-            </div>
-        </header>
+            <p>Software Engineer | Backend Developer</p>
+            <p>1039 Karen, Nairobi 00502 | edwinakidah1@gmail.com | +2547 6993 7229</p>
+            <p><a href="https://ceryakida.vercel.app/">Portfolio</a> | <a href="https://www.linkedin.com/in/carey-akida-a619911a8/">LinkedIn</a> | <a href="https://github.com/Carey99">GitHub</a></p>
+        </div>
 
-        <section class="profile-summary">
-            <h3>Profile Summary</h3>
+        <div class="section">
+            <h2>Profile Summary</h2>
             <p>Motivated backend developer with hands-on experience in Python, JavaScript, C, and Ruby, and a solid understanding of modern backend frameworks and database management. Skilled in building APIs, managing data, and deploying scalable systems. Passionate about learning, improving coding efficiency, and delivering seamless backend solutions.</p>
-        </section>
+        </div>
 
-        <section class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li><strong>Languages:</strong> Python, JavaScript, C, Ruby</li>
-                <li><strong>Frameworks & Libraries:</strong> Flask, Express.js, React.js</li>
-                <li><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, SQL, NoSQL</li>
-                <li><strong>Tools & Platforms:</strong> Docker, Kubernetes, Git (Version Control), CI/CD tools</li>
-                <li><strong>Web Development:</strong> HTML, CSS</li>
-                <li><strong>Other Skills:</strong> API development, Cloud Integration, Moderation, Data Analysis</li>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li><span>Python</span><span>JavaScript</span><span>C</span><span>Ruby</span></li>
+                <li><span>Flask</span><span>Express.js</span><span>React.js</span></li>
+                <li><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>NoSQL</span></li>
+                <li><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD Tools</span></li>
+                <li><span>HTML</span><span>CSS</span><span>API Development</span><span>Cloud Integration</span><span>Data Analysis</span></li>
             </ul>
-        </section>
+        </div>
 
-        <section class="education">
-            <h3>Education</h3>
-            <p><strong>ALX (Holberton School)</strong> — Software Engineering<br>
-            August 2023 – October 2024</p>
-            <p>Completed an intensive one-year program focused on full-stack development, specializing in backend technologies.</p>
-
-            <p><strong>Cisco Academy</strong> — JavaScript Essentials<br>
-            April 2023 – June 2023</p>
-            <p>Developed foundational skills in JavaScript programming and web development.</p>
-        </section>
-
-        <section class="experience">
-            <h3>Professional Experience</h3>
-            <p><strong>CloudFactory</strong> — Data Analyst & Moderator<br>
-            November 2022 – Present</p>
+        <div class="section">
+            <h2>Education</h2>
             <ul>
-                <li>-  Analyze and process data to improve workflows and operational efficiency.</li>
-                <li>-  Moderate and review content to ensure client policies and guidelines compliance.</li>
-                <li>-  Monitor flagged content and take appropriate actions to maintain platform integrity.</li>
-                <li>-  Collaborate with cross-functional teams to maintain data quality and drive improvements.</li>
-                <li>-  Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy.</li>
-                <li>-  Provide feedback on process improvements to enhance moderation tools and workflows.</li>
+                <li><strong>ALX (Holberton School)</strong> — Software Engineering</li>
+                <li><strong>Cisco Academy</strong> — JavaScript Essentials</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="projects">
-            <h3>Projects</h3>
-            <p><strong>Jabali</strong> — Website for a fish exportation firm<br>
-            <i>Built a responsive website to manage local sales and export processes.</i></p>
-            <p><strong>Technologies used:</strong> JavaScript, HTML, CSS, Express.js<br>
-            <a href="https://github.com/Carey99/jabali" target="_blank">GitHub Repository</a></p>
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>CloudFactory</strong> — Data Analyst & Moderator
+                    <ul>
+                        <li>Analyze and process data to improve workflows and operational efficiency.</li>
+                        <li>Moderate and review content to ensure client policies and guidelines compliance.</li>
+                        <li>Monitor flagged content and take appropriate actions to maintain platform integrity.</li>
+                        <li>Collaborate with cross-functional teams to maintain data quality and drive improvements.</li>
+                        <li>Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-            <p><strong>ProAuth</strong> — Authentication Application<br>
-            <i>Developed a rough prototype of an authenticator app.</i></p>
-            <p><strong>Technologies used:</strong> Python, Flask, JavaScript, HTML, CSS<br>
-            <a href="https://github.com/Carey99/full_proauth" target="_blank">GitHub Repository</a></p>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Jabali</strong> — Website for a fish exportation firm
+                    <p>Technologies used: JavaScript, HTML, CSS, Express.js</p>
+                </li>
+                <li><strong>ProAuth</strong> — Authentication Application
+                    <p>Technologies used: Python, Flask, JavaScript, HTML, CSS</p>
+                </li>
+                <li><strong>RentEase</strong> — Ongoing project
+                    <p>Technologies used: Python, Express.js, MongoDB, JavaScript, HTML, CSS, React.js</p>
+                </li>
+            </ul>
+        </div>
 
-            <p><strong>RentEase</strong> — Ongoing project<br>
-            <i>Building a platform to help tenants and landlords manage payments, bills, and property information.</i></p>
-            <p><strong>Technologies used:</strong> Python, Express.js, MongoDB, JavaScript, HTML, CSS, React.js</p>
-        </section>
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Software Engineer — ALX (Holberton School)</li>
+                <li>JS Essentials — Cisco Academy</li>
+            </ul>
+        </div>
 
-        <section class="certifications">
-            <h3>Certifications</h3>
-            <p>Software Engineer — ALX (Holberton School)</p>
-            <p>JavaScript Essentials — Cisco Academy</p>
-        </section>
-
-        <section class="hobbies">
-            <h3>Hobbies & Interests</h3>
+        <div class="section">
+            <h2>Hobbies & Interests</h2>
             <p>Coding, football, traveling, reading, hiking, music, and tech innovations.</p>
-        </section>
+        </div>
     </div>
 </body>
 </html>
