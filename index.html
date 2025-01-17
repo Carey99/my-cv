@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Edwin Akida - CV</title>
+    <title>Carey Akida CV</title>
     <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: large;
-            line-height: 1.8;
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 23px;
+            line-height: 1.6;
+            color: #000;
+            background: #f9f9f9;
+            padding: 20px;
         }
 
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            width: 300mm;
+            margin: auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
-            color: #555;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .header {
@@ -33,8 +35,8 @@
         }
 
         .header h1 {
-            font-size: 28px;
-            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
         }
 
         .header p {
@@ -42,119 +44,185 @@
         }
 
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
 
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            border-bottom: 3px solid #555;
-            padding-bottom: 5px;
+        .section-title {
+            font-size: 27px;
+            font-weight: lighter;
+            border-top: 1px solid #000;
+            text-transform: uppercase;
         }
 
-        ul {
+        .section-content {
+            padding-left: 10rem;
+            margin-bottom: auto;
+        }
+
+        .section-content ul {
             list-style: none;
-            padding: 0;
+            padding-left: 15px;
         }
 
-        ul li {
-            margin-bottom: 10px;
-        }
-        ul ul {
-        list-style: disc; /* Adds bullets for nested lists */
-        margin-left: 20px; /* Indents the nested list */
+        .section-content ul li {
+            margin-bottom: 5px;
         }
 
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
 
-        .skills span {
-            display: inline-block;
-            margin-right: 10px;
-            background: #e0e0e0;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: medium;
+        .two-columns > div {
+            width: 48%;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
-            <h1>Carey Edwin Akida</h1>
-            <p>Software Engineer | Backend Developer</p>
-            <p>1039 Karen, Nairobi 00502 | edwinakidah1@gmail.com | +2547 6993 7229</p>
-            <p><a href="https://ceryakida.vercel.app/">Portfolio</a> | <a href="https://www.linkedin.com/in/carey-akida-a619911a8/">LinkedIn</a> | <a href="https://github.com/Carey99">GitHub</a></p>
+            <h1>Carey Akida, Software Engineer</h1>
+            <p>1039 Karen, Nairobi, 00502, Kenya | +2547 6993 7229 | edwinakidah1@gmail.com</p>
+        </div>
+        <!--Links-->
+        <div class="section">
+            <div class="section-title">Links</div>
+            <div class="section-content">
+                <a href="https://ceryakida.vercel.app/">Portfolio</a>,
+                <a href="https://github.com/Carey99">GitHub,</a>
+                <a href="https://www.linkedin.com/in/carey-akida-a619911a8/">LinkedIn</a>
+            </div>
         </div>
 
+        <!-- Profile Section -->
         <div class="section">
-            <h2>Profile Summary</h2>
-            <p>Motivated backend developer with hands-on experience in Python, JavaScript, C, and Ruby, and a solid understanding of modern backend frameworks and database management. Skilled in building APIs, managing data, and deploying scalable systems. Passionate about learning, improving coding efficiency, and delivering seamless backend solutions.</p>
+            <div class="section-title">Profile</div>
+            <div class="section-content">
+                <p>Motivated backend developer with hands-on experience in Python, JavaScript, C, and Ruby,
+                    and a solid understanding of modern backend frameworks and database management. Skilled
+                    in building APIs, managing data, and deploying scalable systems. Passionate about learning,
+                    improving coding efficiency, and delivering seamless backend solutions.</p>
+            </div>
         </div>
 
+        <!-- Employment History -->
         <div class="section">
-            <h2>Skills</h2>
-            <ul class="skills">
-                <li><span>Python</span><span>JavaScript</span><span>C</span><span>Ruby</span></li>
-                <li><span>Flask</span><span>Express.js</span><span>React.js</span></li>
-                <li><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>NoSQL</span></li>
-                <li><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD Tools</span></li>
-                <li><span>HTML</span><span>CSS</span><span>API Development</span><span>Cloud Integration</span><span>Data Engineering</span></li>
-                <li><span>Database Integration</span><span>Selenium</span><span>REST API</span><span>Redis</span><span>Web Scraping</span></li>
-            </ul>
+            <div class="section-title">Employment History</div>
+            <p><i>Nov 2022 – Present</i>  <div><strong>Content Moderator, CloudFactory </strong></div>(Nairobi)</p><br>
+            <div class="section-content">
+                <ul>
+                    <li>• Resolves user disputes related to content moderation in a timely and professional manner</li>
+                    <li>• Analyze trends in user-generated content to identify areas of risk and potential improvement</li>
+                    <li>• Moderately review content to ensure compliance with client policies and guidelines. </li>
+                    <li>• Analyze and process data to improve workflows and operational efficiency. </li>
+                    <li>• Monitor flagged content and take appropriate actions to maintain platform integrity. </li>
+                    <li>• Collaborate with cross-functional teams to maintain data quality and drive improvements. Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy. </li>
+                    <li>• Develop user education materials to inform users of content moderation policies and best practices</li>
+                    <li>• Create a reporting system to track and monitor content moderation activities</li>
+                    <li>• Develop an automated workflow to identify and flag content that violates company policies</li>
+                </ul>
         </div>
 
+        <!-- Education Section -->
         <div class="section">
-            <h2>Education</h2>
+            <div class="section-title">Education</div>
+            <div class="section-content">
+                <p>Computer Software Engineering, African Leadership Experience (ALX)</p><br>
+                <p>High School Diploma, St. Joseph School</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="section-content">
+                <div class="two-columns">
+                    <div>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>Docker</li>
+                            <li>Express.JS</li>
+                            <li>Flask</li>
+                            <li>MongoDB</li>
+                            <li>React.JS</li>
+                            <li>Ruby</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Cloud Integration</li>
+                            <li>Continuous Integration</li>
+                            <li>Databases</li>
+                            <li>Git</li>
+                            <li>Kubernetes</li>
+                            <li>MySQL</li>
+                            <li>NoSQL</li>
+                            <li>Redis</li>
+                            <li>Selenium</li>
+                            <li>Web Scraping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course section-->
+    <div class="section">
+        <div class="section-title">Courses</div>
+        <div class="section-content">
             <ul>
-                <li><strong>ALX (Holberton School)</strong> — Computer Software Engineering</li>
-                <li><strong>CodeCademy</strong> — UI/UX Designing
-                <li><strong>Cisco Academy</strong> — JS Essentials</li>
-            </ul>
+                <li>JS Essentials, Cisco Academy</li>
+                <li>UI/UX Desgining, Codecademy</li>
+                <li>Cloud AWS, Microsoft</li>
+            </ul> 
         </div>
-
-        <div class="section">
-            <h2>Professional Experience</h2>
+    </div>
+    <!-- Projects Section -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="section-content">
+            <p><strong>AirBnB Clone</strong><br> Property and space renting</p>
             <ul>
-                <li><strong>CloudFactory</strong> — Data Analyst & Moderator
-                    <ul>
-                        <li>Analyze and process data to improve workflows and operational efficiency.</li>
-                        <li>Moderate and review content to ensure client policies and guidelines compliance.</li>
-                        <li>Monitor flagged content and take appropriate actions to maintain platform integrity.</li>
-                        <li>Collaborate with cross-functional teams to maintain data quality and drive improvements.</li>
-                        <li>Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy.</li>
-                    </ul>
-                </li>
+                <li><i>Technologies:</i></li>
+                <li>• Python, Flask, Express.js, JavaScript</li>
+                <li>• Docker, MongoDB</li>
+                <li>• React.JS, HTML, CSS</li>
             </ul>
-        </div>
-
-        <div class="section">
-            <h2>Projects</h2>
+            <p><strong>Jabali</strong><br> Dynamic fish exportation website</p>
             <ul>
-                <li><strong>Jabali</strong> — Website for a fish exportation firm
-                    <p>Technologies used: JavaScript, HTML, CSS, Express.js</p>
-                </li>
-                <li><strong>ProAuth</strong> — Authentication Application
-                    <p>Technologies used: Python, Flask, JavaScript, HTML, CSS</p>
-                </li>
-                <li><strong>Airbnb clone</strong> — Property renting
-                    <p>Technologies used: Python, Flask, Docker, Express.js, MongoDB, JavaScript, HTML, CSS, React.js</p>
-                </li>
-                <li><strong>RentEase</strong> — Property Management application
-                    <p>Technologies used: Python, Express.js, MongoDB, JavaScript, HTML, CSS, React.js</p>
-                </li>
+                <li><i>Technologies:</i></li>
+                <li>• JavaScript, HTML, CSS</li>
+                <li>• Express.JS<li>
             </ul>
-        </div>
-
-        <div class="section">
-            <h2>Certifications</h2>
+            <p><strong>ProAuth</strong><br> Authenticator application prototype</p>
             <ul>
-                <li>Software Engineer — ALX (Holberton School)</li>
-                <li>JS Essentials — Cisco Academy</li>
+                <li><i>Technologies:</i></li>
+                <li>• Python, Flask, JavaScript</li>
+                <li>• HTML, CSS</li>
             </ul>
-        </div>
-
-        <div class="section">
-            <h2>Hobbies & Interests</h2>
-            <p>Coding, football, traveling, reading, hiking, music, and tech innovations.</p>
+            <p><strong>RentEase</strong><br> Property management application</p>
+            <ul>
+                <li><i>Technologies:</i></li>
+                <li>• Python, Express.js</li>
+                <li>• JavaScript, MongoDB</li>
+                <li>• React.JS, HTML, CSS</li>
+            </ul>
         </div>
     </div>
 </body>
