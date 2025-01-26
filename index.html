@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Akida CV</title>
+    <title>Carey Akida</title>
     <style>
-        /* Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +13,7 @@
 
         body {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 23px;
+            font-size: 18px;
             line-height: 1.6;
             color: #000;
             background: #f9f9f9;
@@ -22,206 +21,321 @@
         }
 
         .container {
-            width: 300mm;
+            width: 80%;
             margin: auto;
             background: #fff;
-            padding: 20mm;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 20px;
         }
 
-        .header h1 {
-            font-size: 26px;
-            font-weight: bold;
+        .links a {
+            text-decoration: none;
+            margin-right: 10px;
+            color: #000;
         }
 
-        .header p {
-            margin: 5px 0;
+        .links a:last-child {
+            margin-right: 0;
         }
 
-        .section {
-            margin-bottom: 8px;
-        }
-
-        .section-title {
-            font-size: 27px;
-            font-weight: lighter;
-            border-top: 1px solid #000;
-            text-transform: uppercase;
-        }
-
-        .section-content {
-            padding-left: 10rem;
-            margin-bottom: auto;
-        }
-
-        .section-content ul {
-            list-style: none;
-            padding-left: 15px;
-        }
-
-        .section-content ul li {
+        .left h1 {
             margin-bottom: 5px;
         }
 
-        .two-columns {
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.6;
+        }
+
+        .right p {
+            display: flex;
+            align-items: center;
+        }
+
+        .right p span {
+            margin-left: 10px;
+        }
+
+        /* Styling for Education section */
+        .section-divider {
+            margin: 40px 0 15px; /* Spacing before and after the divider */
+            border-top: 2px solid #000; /* Bold horizontal line */
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: -20px; /* Spacing below the line */
+            text-transform: uppercase; /* Make the text uppercase */
+        }
+
+        .education-item {
             display: flex;
             justify-content: space-between;
+            margin: 10px 0; /* Spacing between education items */
         }
 
-        .two-columns > div {
-            width: 48%;
+        .education-left {
+            font-weight: bold;
         }
 
-        @media print {
-            body {
-                background: none;
-                padding: 0;
-            }
+        .education-left p {
+            font-weight: normal; /* Normal weight for the second line */
+        }
 
-            .container {
-                box-shadow: none;
-                margin: 0;
-            }
+        .education-right {
+            text-align: right;
+            font-style: italic; /* Italicize */
+        }
+
+        /* Skills Summary section */
+        .skills-section {
+            margin-top: -10px;
+        }
+
+        .skills-list {
+            list-style-type: square;
+            margin: 20px 20px 20px 0; /* Shift the list to the left */
+            padding-left: 40px;
+            margin-left: -20px;
+        }
+
+        .skills-list li {
+            margin: 10px 0;
+        }
+
+        .platforms-list {
+            list-style-type: circle;
+            margin: 10px 0 20px 40px;
+        }
+
+        .platforms-list li {
+            margin: 5px 0;
+        }
+
+        /* Work Experience section */
+        .work-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0; /* Spacing between work items */
+        }
+
+        .work-left {
+            font-weight: bold;
+        }
+
+        .work-left a {
+            text-decoration: none;
+            color: #2f4799;
+        }
+
+        .work-right {
+            text-align: right;
+            font-style: italic; /* Italicize */
+        }
+
+        .work-description {
+            margin: 10px 0 0 20px; /* Indent descriptions */
+            list-style-type: disc;
+        }
+
+        .work-description li {
+            margin: 3px 0;
+        }
+
+        .project-item {
+            margin: 20px 0;
+        }
+
+        .project-name {
+            font-weight: bold;
+        }
+
+        .project-description {
+            font-style: italic;
+            margin-bottom: -30px;
+        }
+
+        .project-link {
+            text-align: right;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .project-details {
+            margin: 10px 0 0 20px;
+            list-style-type: disc;
+        }
+
+        .project-details li {
+            margin: 5px 0;
+        }
+
+        .course-item {
+            margin: 20px 0;
+        }
+
+        .course-name {
+            font-weight: bold;
+        }
+
+        .course-description {
+            margin-left: 20px;
+            list-style-type: disc;
+            margin-top: -20px;
+        }
+
+        .course-right {
+            text-align: right;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header section -->
         <div class="header">
-            <h1>Carey Akida, Software Engineer</h1>
-            <p>1039 Karen, Nairobi, 00502, Kenya | +2547 6993 7229 | edwinakidah1@gmail.com</p>
-        </div>
-        <!--Links-->
-        <div class="section">
-            <div class="section-title">Links</div>
-            <div class="section-content">
-                <a href="https://ceryakida.vercel.app/">Portfolio</a>,
-                <a href="https://github.com/Carey99">GitHub,</a>
-                <a href="https://www.linkedin.com/in/carey-akida-a619911a8/">LinkedIn</a>
-            </div>
-        </div>
-
-        <!-- Profile Section -->
-        <div class="section">
-            <div class="section-title">Profile</div>
-            <div class="section-content">
-                <p>Motivated backend developer with hands-on experience in Python, JavaScript, C, and Ruby,
-                    and a solid understanding of modern backend frameworks and database management. Skilled
-                    in building APIs, managing data, and deploying scalable systems. Passionate about learning,
-                    improving coding efficiency, and delivering seamless backend solutions.</p>
-            </div>
-        </div>
-
-        <!-- Employment History -->
-        <div class="section">
-            <div class="section-title">Employment History</div>
-            <p><i>Nov 2022 – Present</i>  <div><strong>Content Moderator, CloudFactory </strong></div>(Nairobi)</p><br>
-            <div class="section-content">
-                <ul>
-                    <li>• Resolves user disputes related to content moderation in a timely and professional manner</li>
-                    <li>• Analyze trends in user-generated content to identify areas of risk and potential improvement</li>
-                    <li>• Moderately review content to ensure compliance with client policies and guidelines. </li>
-                    <li>• Analyze and process data to improve workflows and operational efficiency. </li>
-                    <li>• Monitor flagged content and take appropriate actions to maintain platform integrity. </li>
-                    <li>• Collaborate with cross-functional teams to maintain data quality and drive improvements. Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy. </li>
-                    <li>• Develop user education materials to inform users of content moderation policies and best practices</li>
-                    <li>• Create a reporting system to track and monitor content moderation activities</li>
-                    <li>• Develop an automated workflow to identify and flag content that violates company policies</li>
-                </ul>
-        </div>
-
-        <!-- Education Section -->
-        <div class="section">
-            <div class="section-title">Education</div>
-            <div class="section-content">
-                <p>Computer Software Engineering, African Leadership Experience (ALX)</p><br>
-                <p>High School Diploma, St. Joseph School</p>
-            </div>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="section">
-            <div class="section-title">Skills</div>
-            <div class="section-content">
-                <div class="two-columns">
-                    <div>
-                        <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML & CSS</li>
-                            <li>Docker</li>
-                            <li>Express.JS</li>
-                            <li>Flask</li>
-                            <li>MongoDB</li>
-                            <li>React.JS</li>
-                            <li>Ruby</li>
-                            <li>APIs</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Cloud Integration</li>
-                            <li>Continuous Integration</li>
-                            <li>Databases</li>
-                            <li>Git</li>
-                            <li>Kubernetes</li>
-                            <li>MySQL</li>
-                            <li>NoSQL</li>
-                            <li>Redis</li>
-                            <li>Selenium</li>
-                            <li>Web Scraping</li>
-                        </ul>
-                    </div>
+            <div class="left">
+                <h1>Carey Akida</h1>
+                <div class="links">
+                    <a href="https://ceryakida.vercel.app/">Portfolio</a> |
+                    <a href="https://github.com/Carey99">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/careyakida">LinkedIn</a>
                 </div>
             </div>
+            <div class="right">
+                <p>Email:<a href="mailto:ceryakida@gmail.com" style="text-decoration: none; color: #2f4799; margin-left: 1em;">ceryakida@gmail.com</a></p>
+                <p>Mobile: <span>+2547 6993 7229</span></p>
+            </div>
         </div>
-    </div>
-    <!-- Course section-->
-    <div class="section">
-        <div class="section-title">Courses</div>
-        <div class="section-content">
-            <ul>
-                <li>JS Essentials, Cisco Academy</li>
-                <li>UI/UX Desgining, Codecademy</li>
-                <li>Cloud AWS, Microsoft</li>
-            </ul> 
+
+        <!-- Education section -->
+        <div class="section-divider"></div>
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="education-left">
+                <p><strong>African Leadership Experience (ALX)</strong></p>
+                <p>Computer Software Engineering</p>
+            </div>
+            <div class="education-right">
+                <p>(Hybrid)</p>
+                <p>Nairobi, Kenya</p>
+            </div>
         </div>
-    </div>
-    <!-- Projects Section -->
-    <div class="section">
-        <div class="section-title">Projects</div>
-        <div class="section-content">
-            <p><strong>AirBnB Clone</strong><br> Property and space renting</p>
-            <ul>
-                <li><i>Technologies:</i></li>
-                <li>• Python, Flask, Express.js, JavaScript</li>
-                <li>• Docker, MongoDB</li>
-                <li>• React.JS, HTML, CSS</li>
+        <div class="section-divider"></div> <!-- Close Education section -->
+
+        <!-- Skills Summary section -->
+        <h2 class="section-title">Skills Summary</h2>
+        <div class="skills-section">
+            <ul class="skills-list">
+                <li>Proficient in Python, JavaScript, and C for backend development.</li>
+                <li>Experience with web frameworks like Flask (Python) and Express.js.</li>
+                <li>Skilled in SQL and NoSQL databases including PostgreSQL, MongoDB, and MySQL.</li>
+                <li>Strong understanding of version control using Git and GitHub.</li>
+                <li>Knowledgeable in containerization tools such as Docker and Kubernetes.</li>
+                <li>Familiarity with front-end technologies: HTML, CSS, and basic React.js.</li>
+                <li>Platforms: PyCharm, Jupyter Notebook, Visual Studio Code, IntelliJ IDEA</li>
             </ul>
-            <p><strong>Jabali</strong><br> Dynamic fish exportation website</p>
-            <ul>
-                <li><i>Technologies:</i></li>
-                <li>• JavaScript, HTML, CSS</li>
-                <li>• Express.JS<li>
+        </div>
+
+        <!-- Work Experience section -->
+        <div class="section-divider"></div>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-item">
+            <div class="work-left">
+                <p><strong>Content Moderator</strong> | <a href="https://www.cloudfactory.com/">CloudFactory</a></p>
+            </div>
+            <div class="work-right">
+                <p>(Remote)</p>
+                <p>Nairobi, Kenya</p>
+            </div>
+        </div>
+        <ul class="work-description">
+            <li>Resolves user disputes related to content moderation in a timely and professional manner.</li>
+            <li>Analyze trends in user-generated content to identify areas of risk and potential improvement.</li>
+            <li>Moderately review content to ensure compliance with client policies and guidelines.</li>
+            <li>Analyze and process data to improve workflows and operational efficiency.</li>
+            <li>Monitor flagged content and take appropriate actions to maintain platform integrity.</li>
+            <li>Collaborate with cross-functional teams to maintain data quality and drive improvements. Clean and organize data using Salesforce to optimize decision-making and enhance reporting accuracy.</li>
+            <li>Develop user education materials to inform users of content moderation policies and best practices.</li>
+            <li>Create a reporting system to track and monitor content moderation activities.</li>
+            <li>Develop an automated workflow to identify and flag content that violates company policies.</li>
+        </ul>
+    
+        <!-- Projects section -->
+        <div class="section-divider"></div>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-item">
+            <div class="project-name">AirBnB Clone</div>
+            <div class="project-description">Property and space renting</div>
+            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/AirBnB_clone_v3">LINK</a></div>
+            <ul class="project-details">
+                <li>Implements full-stack functionality for property listing and booking.</li>
+                <li>Handles user authentication, property management, and reviews.</li>
+                <li>Provides dynamic search and filtering capabilities.</li>
             </ul>
-            <p><strong>ProAuth</strong><br> Authenticator application prototype</p>
-            <ul>
-                <li><i>Technologies:</i></li>
-                <li>• Python, Flask, JavaScript</li>
-                <li>• HTML, CSS</li>
+        </div>
+
+        <div class="project-item">
+            <div class="project-name">Jabali</div>
+            <div class="project-description">Fish exportation and local selling platform</div>
+            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/Jabali">LINK</a></div>
+            <ul class="project-details">
+                <li>Features seamless order placement and tracking for users.</li>
+                <li>Integrated payment gateway for secure transactions.</li>
+                <li>Built using HTML, CSS, JavaScript, and Express.js for backend logic.</li>
             </ul>
-            <p><strong>RentEase</strong><br> Property management application</p>
-            <ul>
-                <li><i>Technologies:</i></li>
-                <li>• Python, Express.js</li>
-                <li>• JavaScript, MongoDB</li>
-                <li>• React.JS, HTML, CSS</li>
+        </div>
+
+        <div class="project-item">
+            <div class="project-name">RentEase</div>
+            <div class="project-description">Tenant and landlord management system</div>
+            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/RentEase">LINK</a></div>
+            <ul class="project-details">
+                <li>Tracks rent dues, payments, and overdue balances.</li>
+                <li>Manages house occupancy status and tenant details.</li>
+                <li>Uses MongoDB for data storage and React.js for the user interface.</li>
+            </ul>
+        </div>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Courses</h2>
+
+        <div class="course-item">
+            <div class="course-name">Azure Developer Associate</div>
+            <div class="course-right">Microsoft Certification</div>
+            <ul class="course-description">
+                <li>Pursuing proficiency in cloud application development and deployment.</li>
+                <li>Pursuing Skills in integrating Azure services and managing resources effectively.</li>
+            </ul>
+        </div>
+
+        <div class="course-item">
+            <div class="course-name">UI/UX Designing</div>
+            <div class="course-right">Codecademy Program</div>
+            <ul class="course-description">
+                <li>Experienced in wireframing and prototyping tools.</li>
+                <li>Understanding of user-centric design principles and accessibility.</li>
+            </ul>
+        </div>
+
+        <div class="course-item">
+            <div class="course-name">JS Essentials</div>
+            <div class="course-right">Cisco Academy</div>
+            <ul class="course-description">
+                <li>Comprehensive knowledge of JavaScript syntax and features.</li>
+                <li>Understanding of DOM manipulation and event handling.</li>
             </ul>
         </div>
     </div>
