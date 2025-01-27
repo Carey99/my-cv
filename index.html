@@ -28,13 +28,58 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .header {
+        /*.header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+        }*/
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the top */
+            gap: 10px; /* Add space between sections */
+            margin-bottom: 20px;
         }
 
+        .left {
+            flex: 1; /* Occupy available space */
+        }
+
+        .left .links {
+            margin-top: 5px;
+        }
+
+        .left .links a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #2f4799;
+            font-weight: bold;
+        }
+
+        .right {
+            flex: 1; /* Occupy available space */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Align to the right */
+            gap: 5px;
+        }
+
+        .right p {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .right a {
+            color: #2f4799;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+    /*edded*/
         .links a {
             text-decoration: none;
             margin-right: 10px;
@@ -49,17 +94,17 @@
             margin-bottom: 5px;
         }
 
-        .right {
+        /*.right {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             line-height: 1.6;
-        }
+        }*/
 
-        .right p {
+        /*.right p {
             display: flex;
             align-items: center;
-        }
+        }*/
 
         .right p span {
             margin-left: 10px;
@@ -200,6 +245,50 @@
             text-align: right;
             font-style: italic;
         }
+
+        @media print {
+            /* General adjustments */
+            body {
+                font-size: 14px; /* Reduce font size for better fit */
+                line-height: 1.4;
+            }
+
+            .container {
+                width: 100%; /* Utilize the full width for printing */
+                margin: 0;
+                padding: 10px; /* Minimize padding */
+                box-shadow: none; /* Remove box-shadow for clean printing */
+            }
+
+            .header {
+                flex-direction: column; /* Stack the header elements for portrait */
+                align-items: flex-start; /* Align to the left */
+            }
+
+            .header .email,
+            .header .mobile {
+                display: block; /* Ensure contact details are stacked */
+                margin-top: 5px;
+            }
+
+            .courses {
+                page-break-inside: avoid; /* Prevent courses section from splitting across pages */
+                font-size: 13px; /* Further reduce font size to minimize distortion */
+            }
+
+            h1, h2, h3 {
+                font-size: 18px; /* Adjust headings for clarity */
+            }
+
+            hr {
+                margin: 10px 0; /* Reduce space around horizontal lines */
+            }
+
+            /* Landscape-specific tweaks */
+            @page {
+                size: landscape;
+            }
+        }
     </style>
 </head>
 <body>
@@ -216,7 +305,9 @@
             </div>
             <div class="right">
                 <p>Email:<a href="mailto:ceryakida@gmail.com" style="text-decoration: none; color: #2f4799; margin-left: 1em;">ceryakida@gmail.com</a></p>
-                <p>Mobile: <span>+2547 6993 7229</span></p>
+                <p style="display: flex; justify-content: flex-start;">
+                    Mobile: <span style="margin-left: 55px;">+2547 6993 7229</span>
+                </p>
             </div>
         </div>
 
