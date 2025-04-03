@@ -289,6 +289,54 @@
                 size: landscape;
             }
         }
+
+        /* Ensure the main container adapts to screen size */
+        .resume-container {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        }
+        
+        /* Prevent text overflow */
+        .resume-container a, 
+        .resume-container p, 
+        .resume-container span {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        }
+        
+        /* Adjust the layout for smaller screens */
+        @media (max-width: 768px) {
+        .resume-container {
+            width: 95%;
+            padding: 5px;
+        }
+        
+        /* Stack name and contact info */
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Center align links */
+        .links {
+            text-align: center;
+        }
+        
+        /* Reduce font sizes for readability */
+        body {
+            font-size: 14px;
+        }
+        
+        /* Ensure sections stack properly */
+        .section {
+            display: block;
+            width: 100%;
+        }
+        }
     </style>
 </head>
 <body>
