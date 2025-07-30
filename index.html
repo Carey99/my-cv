@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Akida</title>
+    <title>Carey Akida - CV</title>
     <style>
         * {
             margin: 0;
@@ -13,466 +14,276 @@
 
         body {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 11px;
+            line-height: 1.4;
             color: #000;
-            background: #f9f9f9;
+            background: #fff;
             padding: 20px;
         }
 
         .container {
-            width: 80%;
+            max-width: 8.5in;
             margin: auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 0.5in;
         }
 
-        /*.header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }*/
-
+        /* Header */
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start; /* Align items to the top */
-            gap: 10px; /* Add space between sections */
+            text-align: center;
             margin-bottom: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
         }
 
-        .left {
-            flex: 1; /* Occupy available space */
-        }
-
-        .left .links {
-            margin-top: 5px;
-        }
-
-        .left .links a {
-            text-decoration: none;
-            margin-right: 15px;
-            color: #2f4799;
+        .header h1 {
+            font-size: 18px;
             font-weight: bold;
+            margin-bottom: 2px;
         }
 
-        .right {
-            flex: 1; /* Occupy available space */
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end; /* Align to the right */
-            gap: 5px;
-        }
-
-        .right p {
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .right a {
-            color: #2f4799;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-
-    /*edded*/
-        .links a {
-            text-decoration: none;
-            margin-right: 10px;
-            color: #000;
-        }
-
-        .links a:last-child {
-            margin-right: 0;
-        }
-
-        .left h1 {
+        .header .subtitle {
+            font-size: 11px;
+            font-style: italic;
             margin-bottom: 5px;
         }
 
-        /*.right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            line-height: 1.6;
-        }*/
-
-        /*.right p {
-            display: flex;
-            align-items: center;
-        }*/
-
-        .right p span {
-            margin-left: 10px;
+        .header .contact {
+            font-size: 10px;
         }
 
-        /* Styling for Education section */
-        .section-divider {
-            margin: 40px 0 15px; /* Spacing before and after the divider */
-            border-top: 2px solid #000; /* Bold horizontal line */
-        }
-
-        .section-title {
-            text-align: center;
+        /* Section Headers */
+        .section-header {
+            font-size: 12px;
             font-weight: bold;
-            font-size: 20px;
-            margin-top: -20px; /* Spacing below the line */
-            text-transform: uppercase; /* Make the text uppercase */
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin: 15px 0 8px 0;
+            padding-bottom: 2px;
         }
 
+        /* Professional Profile */
+        .profile-text {
+            text-align: justify;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        /* Work Experience */
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 10px 0 3px 0;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .job-dates {
+            font-size: 10px;
+            font-style: italic;
+        }
+
+        .company-name {
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+
+        .job-description {
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+
+        .job-description li {
+            margin-bottom: 2px;
+            list-style-type: disc;
+        }
+
+        /* Education */
         .education-item {
             display: flex;
             justify-content: space-between;
-            margin: 10px 0; /* Spacing between education items */
+            margin: 5px 0;
         }
 
         .education-left {
-            font-weight: bold;
-        }
-
-        .education-left p {
-            font-weight: normal; /* Normal weight for the second line */
+            flex: 1;
         }
 
         .education-right {
-            text-align: right;
-            font-style: italic; /* Italicize */
-        }
-
-        /* Skills Summary section */
-        .skills-section {
-            margin-top: -10px;
-        }
-
-        .skills-list {
-            list-style-type: square;
-            margin: 20px 20px 20px 0; /* Shift the list to the left */
-            padding-left: 40px;
-            margin-left: -20px;
-        }
-
-        .skills-list li {
-            margin: 10px 0;
-        }
-
-        .platforms-list {
-            list-style-type: circle;
-            margin: 10px 0 20px 40px;
-        }
-
-        .platforms-list li {
-            margin: 5px 0;
-        }
-
-        /* Work Experience section */
-        .work-item {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0; /* Spacing between work items */
-        }
-
-        .work-left {
-            font-weight: bold;
-        }
-
-        .work-left a {
-            text-decoration: none;
-            color: #2f4799;
-        }
-
-        .work-right {
-            text-align: right;
-            font-style: italic; /* Italicize */
-        }
-
-        .work-description {
-            margin: 10px 0 0 20px; /* Indent descriptions */
-            list-style-type: disc;
-        }
-
-        .work-description li {
-            margin: 3px 0;
-        }
-
-        .project-item {
-            margin: 20px 0;
-        }
-
-        .project-name {
-            font-weight: bold;
-        }
-
-        .project-description {
             font-style: italic;
-            margin-bottom: -30px;
+            font-size: 10px;
         }
 
-        .project-link {
-            text-align: right;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .project-details {
-            margin: 10px 0 0 20px;
-            list-style-type: disc;
-        }
-
-        .project-details li {
-            margin: 5px 0;
-        }
-
-        .course-item {
-            margin: 20px 0;
-        }
-
-        .course-name {
+        .degree {
             font-weight: bold;
         }
 
-        .course-description {
-            margin-left: 20px;
-            list-style-type: disc;
-            margin-top: -20px;
-        }
-
-        .course-right {
-            text-align: right;
+        .university {
             font-style: italic;
+        }
+
+        /* Skills */
+        .skills-content {
+            line-height: 1.3;
+        }
+
+        .skills-content p {
+            margin-bottom: 3px;
         }
 
         @media print {
-            /* General adjustments */
             body {
-                font-size: 14px; /* Reduce font size for better fit */
-                line-height: 1.4;
+                font-size: 10px;
+                padding: 0;
             }
 
             .container {
-                width: 100%; /* Utilize the full width for printing */
-                margin: 0;
-                padding: 10px; /* Minimize padding */
-                box-shadow: none; /* Remove box-shadow for clean printing */
+                padding: 0.3in;
             }
-
-            .header {
-                flex-direction: column; /* Stack the header elements for portrait */
-                align-items: flex-start; /* Align to the left */
-            }
-
-            .header .email,
-            .header .mobile {
-                display: block; /* Ensure contact details are stacked */
-                margin-top: 5px;
-            }
-
-            .courses {
-                page-break-inside: avoid; /* Prevent courses section from splitting across pages */
-                font-size: 13px; /* Further reduce font size to minimize distortion */
-            }
-
-            h1, h2, h3 {
-                font-size: 18px; /* Adjust headings for clarity */
-            }
-
-            hr {
-                margin: 10px 0; /* Reduce space around horizontal lines */
-            }
-
-            /* Landscape-specific tweaks */
-            @page {
-                size: landscape;
-            }
-        }
-
-        /* Ensure the main container adapts to screen size */
-        .resume-container {
-        max-width: 100%;
-        width: 90%;
-        margin: 0 auto;
-        padding: 10px;
-        }
-        
-        /* Prevent text overflow */
-        .resume-container a, 
-        .resume-container p, 
-        .resume-container span {
-        word-break: break-word;
-        overflow-wrap: break-word;
-        }
-        
-        /* Adjust the layout for smaller screens */
-        @media (max-width: 768px) {
-        .resume-container {
-            width: 95%;
-            padding: 5px;
-        }
-        
-        /* Stack name and contact info */
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
-        /* Center align links */
-        .links {
-            text-align: center;
-        }
-        
-        /* Reduce font sizes for readability */
-        body {
-            font-size: 14px;
-        }
-        
-        /* Ensure sections stack properly */
-        .section {
-            display: block;
-            width: 100%;
-        }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <!-- Header section -->
+        <!-- Header -->
         <div class="header">
-            <div class="left">
-                <h1>Carey Akida</h1>
-                <div class="links">
-                    <a href="https://ceryakida.vercel.app/">Portfolio</a> |
-                    <a href="https://github.com/Carey99">GitHub</a> |
-                    <a href="https://www.linkedin.com/in/careyakida">LinkedIn</a>
-                </div>
-            </div>
-            <div class="right">
-                <p>Email:<a href="mailto:ceryakida@gmail.com" style="text-decoration: none; color: #2f4799; margin-left: 1em;">ceryakida@gmail.com</a></p>
-                <p style="display: flex; justify-content: flex-start;">
-                    Mobile: <span style="margin-left: 55px;">+2547 6993 7229</span>
-                </p>
+            <h1>CAREY AKIDA</h1>
+            <div class="subtitle">Software Engineer</div>
+            <div class="contact">
+                Nairobi, Kenya: +254 769 937 229 | ceryakida@gmail.com
             </div>
         </div>
 
-        <!-- Education section -->
-        <div class="section-divider"></div>
-        <h2 class="section-title">Education</h2>
+        <!-- Professional Profile -->
+        <div class="section-header">PROFESSIONAL PROFILE</div>
+        <div class="profile-text">
+            Results-driven software engineer with expertise in full-stack development, AI integration, and system
+            optimization. Proven track record of delivering scalable solutions that improve operational efficiency and
+            user engagement. Experienced in Python, JavaScript, and modern web frameworks, with a strong focus on
+            data-driven decision making and process automation. Demonstrated ability to analyze complex problems and
+            implement innovative solutions that drive business growth.
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section-header">WORK EXPERIENCE</div>
+
+        <div class="job-header">
+            <div class="job-title">CONTENT MODERATOR</div>
+            <div class="job-dates">04/2022 – Present</div>
+        </div>
+        <div class="company-name">CloudFactory (Remote), Nairobi, Kenya</div>
+        <ul class="job-description">
+            <li>Efficiently resolve over 3,000 flagged reports daily using advanced content moderation tools,
+                maintaining a high standard of accuracy and platform integrity.</li>
+            <li>Utilize and customize Zendesk automated responses tailored to user contexts, reducing issue recurrence
+                rates by 5% through proactive resolution strategies.</li>
+            <li>Collaborate with cross-functional teams to maintain data quality, streamline processes, and drive a 10%
+                improvement in reporting accuracy using Salesforce.</li>
+            <li>Examined patterns in user-submitted feedback and flagged significant compliance issues, resulting in the
+                implementation of new guidelines that reduced policy violations by approximately 15 incidents monthly.
+            </li>
+            <li>Conducting in-depth analysis of 1,000+ flagged entries weekly, identifying trends that addressed
+                operational bottlenecks, improving efficiency across moderation systems.</li>
+            <li>Continuously provide actionable insights on moderation tools and best practices, empowering team members
+                to enhance efficiency, contributing to a 15% increase in productivity and improved content compliance
+                rates.</li>
+        </ul>
+
+        <!-- Projects -->
+        <div class="section-header">KEY PROJECTS</div>
+
+        <div class="job-header">
+            <div class="job-title">AMIRAN DRIVING SCHOOL MANAGEMENT SYSTEM</div>
+            <div class="job-dates"><a href="http://amirandrivingcollege.co.ke/" target="_blank"
+                    style="color: #2f4799; text-decoration: none;">Link</a></div>
+        </div>
+        <div class="company-name">Digital scheduling and student management system</div>
+        <ul class="job-description">
+            <li>Designed and implemented a digital scheduling and student management system, reducing manual scheduling
+                errors by 35% and improving lesson attendance rates within the first two months.</li>
+            <li>Automated payment tracking and receipt generation, decreasing administrative overhead by 40% and
+                accelerating fee collection timelines by 20%.</li>
+            <li>Integrated instructor performance analytics, enabling data-driven decisions that boosted overall
+                training completion rates by 15%.</li>
+            <li>Leveraged a robust backend with an intuitive UI, improving system adoption rates among staff and
+                students by 30%.</li>
+        </ul>
+
+        <div class="job-header">
+            <div class="job-title">JOBTRACKAI</div>
+            <div class="job-dates"><a href="https://jobtrackai.onrender.com/" target="_blank"
+                    style="color: #2f4799; text-decoration: none;">Link</a></div>
+        </div>
+        <div class="company-name">AI-powered job tracking and career enhancement platform</div>
+        <ul class="job-description">
+            <li>Integrated OpenAI to deliver personalized resume feedback, increasing user resume approval rates by 35%
+                on job applications.</li>
+            <li>Built a job aggregation engine scraping multiple sources, enabling users to access a comprehensive list
+                of roles with real-time filtering (7 days, < 1 month,> 1 month).</li>
+            <li>Enhanced job search efficiency by 40% through advanced filtering and tailored job recommendations based
+                on user profiles.</li>
+            <li>Developed a scalable architecture to support rapid data ingestion and AI-powered insights, resulting in
+                a 25% increase in user retention within three months.</li>
+        </ul>
+
+        <div class="job-header">
+            <div class="job-title">JABALI</div>
+            <div class="job-dates"><a href="https://github.com/Carey99/Jabali" target="_blank"
+                    style="color: #2f4799; text-decoration: none;">Link</a></div>
+        </div>
+        <div class="company-name">Fish exportation and local selling platform</div>
+        <ul class="job-description">
+            <li>Streamlined order placement workflows, reducing user checkout times by 25%, leading to a 15% increase in
+                successful transactions within two months.</li>
+            <li>Integrated a secure payment gateway, mitigating transaction errors and enhancing user trust, resulting
+                in a 30% growth in platform usage.</li>
+            <li>Leveraged a full-stack tech stack to optimize server response times, achieving a 40% performance
+                improvement for real-time order tracking features.</li>
+        </ul>
+
+        <div class="job-header">
+            <div class="job-title">RENTEASE</div>
+            <div class="job-dates"><a href="https://github.com/Carey99/RentEase" target="_blank"
+                    style="color: #2f4799; text-decoration: none;">Link</a></div>
+        </div>
+        <div class="company-name">Tenant and landlord management system</div>
+        <ul class="job-description">
+            <li>Analyzed user-generated content trends, identifying critical risk factors and actionable insights that
+                enhanced compliance strategies for over 200 landlord-tenant interactions in a six-month period.</li>
+            <li>Conducted detailed assessments of user-generated content, revealing three primary areas needing
+                improvement; recommendations led to increased engagement rates by 25% across tenant communication
+                channels within eight weeks.</li>
+        </ul>
+
+        <!-- Education -->
+        <div class="section-header">EDUCATION</div>
+
         <div class="education-item">
             <div class="education-left">
-                <p><strong>African Leadership Experience (ALX)</strong></p>
-                <p>Computer Software Engineering</p>
+                <div class="degree">Computer Software Engineering | Full-stack Development</div>
+                <div class="university">African Leadership Experience (ALX), Nairobi, Kenya</div>
             </div>
-            <div class="education-right">
-                <p>(Hybrid)</p>
-                <p>Nairobi, Kenya</p>
-            </div>
-        </div>
-        <div class="section-divider"></div> <!-- Close Education section -->
-
-        <!-- Skills Summary section -->
-        <h2 class="section-title">Skills Summary</h2>
-        <div class="skills-section">
-            <ul class="skills-list">
-                <li>Proficient in Python, JavaScript, and C for backend development.</li>
-                <li>Experience with web frameworks like Flask (Python) and Express.js.</li>
-                <li>Skilled in SQL and NoSQL databases including PostgreSQL, MongoDB, and MySQL.</li>
-                <li>Strong understanding of version control using Git and GitHub.</li>
-                <li>Knowledgeable in containerization tools such as Docker and Kubernetes.</li>
-                <li>Familiarity with front-end technologies: HTML, CSS, and basic React.js.</li>
-                <li>Platforms: PyCharm, Jupyter Notebook, Visual Studio Code, IntelliJ IDEA</li>
-            </ul>
+            <div class="education-right"></div>
         </div>
 
-        <!-- Work Experience section -->
-        <div class="section-divider"></div>
-        <h2 class="section-title">Work Experience</h2>
-        <div class="work-item">
-            <div class="work-left">
-                <p><strong>Content Moderator</strong> | <a href="https://www.cloudfactory.com/">CloudFactory</a></p>
-            </div>
-            <div class="work-right">
-                <p>(Remote)</p>
-                <p>Nairobi, Kenya</p>
-            </div>
-        </div>
-        <ul class="work-description">
-            <li>Efficiently resolve over 3,000 flagged reports daily using advanced content moderation tools, maintaining a high standard of accuracy and platform integrity.</li>
-            <li>Utilize and customize Zendesk automated responses tailored to user contexts, reducing issue recurrence rates by 5% through proactive resolution strategies.</li>
-            <li>Collaborate with cross-functional teams to maintain data quality, streamline processes, and drive a 10% improvement in reporting accuracy using Salesforce.</li>
-            <li>Examined patterns in user-submitted feedback and flagged significant compliance issues, resulting in the implementation of new guidelines that reduced policy violations by approximately 15 incidents monthly.</li>
-            <li>Conducting in-depth analysis of 1,000+ flagged entries weekly, identifying trends that addressed operational bottlenecks, improving efficiency across moderation systems.</li>
-            <li>Continuously provide actionable insights on moderation tools and best practices, empowering team members to enhance efficiency, contributing to a 15% increase in productivity and improved content compliance rates.</li>
-        </ul>
-    
-        <!-- Projects section -->
-        <div class="section-divider"></div>
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-item">
-            <div class="project-name">AirBnB Clone</div>
-            <div class="project-description">Property and space renting</div>
-            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/AirBnB_clone_v3">LINK</a></div>
-            <ul class="project-details">
-                <li>Conducted a comprehensive analysis of user booking behaviors, identifying key pain points in property search and filtering; improvements can boost booking efficiency by 30% within three months.</li>
-                <li>Developed a review and feedback system, increasing user engagement and review submission rates by 20% across all property listings.</li>
-            </ul>
-        </div>
-
-        <div class="project-item">
-            <div class="project-name">Jabali</div>
-            <div class="project-description">Fish exportation and local selling platform</div>
-            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/Jabali">LINK</a></div>
-            <ul class="project-details">
-                <li>Streamlined order placement workflows, reducing user checkout times by 25%, leading to a 15% increase in successful transactions within two months.</li>
-                <li>Integrated a secure payment gateway, mitigating transaction errors and enhancing user trust, resulting in a 30% growth in platform usage.</li>
-                <li>Leveraged a full-stack tech stack to optimize server response times, achieving a 40% performance improvement for real-time order tracking features.
-                </li>
-            </ul>
-        </div>
-
-        <div class="project-item">
-            <div class="project-name">RentEase</div>
-            <div class="project-description">Tenant and landlord management system</div>
-            <div class="project-link" style="color: #2f4799;"><a href="https://github.com/Carey99/RentEase">LINK</a></div>
-            <ul class="project-details">
-                <li>Analyzed user-generated content trends, identifying critical risk factors and actionable insights that enhanced compliance strategies for over 200 landlord-tenant interactions in a six-month period.</li>
-                <li>Conducted detailed assessments of user-generated content, revealing three primary areas needing improvement; recommendations led to increased engagement rates by 25% across tenant communication channels within eight weeks.</li>
-            </ul>
-        </div>
-        <div class="section-divider"></div>
-        <h2 class="section-title">Courses</h2>
-
-        <div class="course-item">
-            <div class="course-name">Azure Developer Associate</div>
-            <div class="course-right">Microsoft Certification</div>
-            <ul class="course-description">
-                <li>Pursuing proficiency in cloud application development and deployment.</li>
-                <li>Pursuing Skills in integrating Azure services and managing resources effectively.</li>
-            </ul>
-        </div>
-
-        <div class="course-item">
-            <div class="course-name">UI/UX Designing</div>
-            <div class="course-right">Codecademy Program</div>
-            <ul class="course-description">
-                <li>Experienced in wireframing and prototyping tools.</li>
-                <li>Understanding of user-centric design principles and accessibility.</li>
-            </ul>
-        </div>
-
-        <div class="course-item">
-            <div class="course-name">JS Essentials</div>
-            <div class="course-right">Cisco Academy</div>
-            <ul class="course-description">
-                <li>Comprehensive knowledge of JavaScript syntax and features.</li>
-                <li>Understanding of DOM manipulation and event handling.</li>
-            </ul>
+        <!-- Skills -->
+        <div class="section-header">SKILLS</div>
+        <div class="skills-content">
+            <p><strong>Languages:</strong> Proficient in Python, JavaScript, and C for backend development.</p>
+            <p><strong>Frameworks:</strong> Experience with web frameworks like Flask (Python) and Express.js.</p>
+            <p><strong>Databases:</strong> Skilled in SQL and NoSQL databases including PostgreSQL, MongoDB, and MySQL.
+            </p>
+            <p><strong>Tools:</strong> Strong understanding of version control using Git and GitHub; knowledgeable in
+                containerization tools such as Docker and Kubernetes.</p>
+            <p><strong>Other skills:</strong> Familiarity with front-end technologies: HTML, CSS, and basic React.js;
+                experience with PyCharm, Jupyter Notebook, Visual Studio Code, IntelliJ IDEA.</p>
         </div>
     </div>
 </body>
+
 </html>
