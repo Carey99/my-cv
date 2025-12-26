@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,15 +17,17 @@
             font-size: 13px;
             line-height:  1.4;
             color: #000;
-            background:  #fff;
-            padding: 20px;
+            background:  #f5f5f5;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 8. 5in;
-            margin: auto;
+            max-width: 850px;
+            width: 100%;
+            margin:  0 auto;
             background: #fff;
-            padding:  0.5in;
+            padding: 60px 70px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         /* Header */
@@ -42,24 +44,24 @@
             margin-bottom: 2px;
         }
 
-        .header .subtitle {
-            font-size: 13px;
+        .header . subtitle {
+            font-size:  13px;
             font-style: italic;
             margin-bottom: 5px;
         }
 
-        .header .contact {
+        . header .contact {
             font-size: 12px;
         }
 
         /* Section Headers */
         .section-header {
             font-size: 14px;
-            font-weight: bold;
+            font-weight:  bold;
             text-transform: uppercase;
             border-bottom: 1px solid #000;
-            margin: 15px 0 8px 0;
-            padding-bottom:  2px;
+            margin:  15px 0 8px 0;
+            padding-bottom: 2px;
         }
 
         /* Professional Profile */
@@ -109,8 +111,8 @@
             margin: 5px 0;
         }
 
-        .education-left {
-            flex: 1;
+        . education-left {
+            flex:  1;
         }
 
         .education-right {
@@ -139,10 +141,23 @@
             body {
                 font-size: 12px;
                 padding: 0;
+                background: #fff;
+            }
+
+            . container {
+                padding: 0. 3in;
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
             }
 
             .container {
-                padding: 0.3in;
+                padding: 30px 25px;
             }
         }
     </style>
@@ -155,7 +170,7 @@
             <h1>CAREY AKIDA</h1>
             <div class="subtitle">Software Engineer</div>
             <div class="contact">
-                Nairobi, Kenya:  +254 769 937 229 | ceryakida@gmail.com
+                Nairobi, Kenya: +254 769 937 229 | ceryakida@gmail.com
             </div>
         </div>
 
@@ -179,10 +194,6 @@
         <ul class="job-description">
             <li>Documented smart contract architecture, deployment processes, and API integrations to improve maintainability 
                 and onboarding efficiency for new developers.</li>
-            <li>Refactored and upgraded existing smart contracts to support new features while maintaining backward compatibility 
-                and minimizing deployment risks.</li>
-            <li>Utilized version control and CI/CD pipelines to automate testing and deployment of blockchain applications, 
-                reducing release errors and improving delivery speed.</li>
             <li>Implemented contract testing and auditing workflows using tools such as Hardhat and Foundry, 
                 identifying vulnerabilities early and improving contract reliability.</li>
             <li>Developed and maintained blockchain-based backend services, integrating Web3 APIs to enable seamless interaction 
@@ -197,19 +208,14 @@
         </div>
         <div class="company-name">CloudFactory (Remote), Nairobi, Kenya</div>
         <ul class="job-description">
-            <li>Efficiently resolve over 3,000 flagged reports daily using advanced content moderation tools,
+            <li>Efficiently resolve over 300 flagged reports daily using advanced content moderation tools,
                 maintaining a high standard of accuracy and platform integrity.</li>
             <li>Utilize and customize Zendesk automated responses tailored to user contexts, reducing issue recurrence
                 rates by 5% through proactive resolution strategies.</li>
             <li>Collaborate with cross-functional teams to maintain data quality, streamline processes, and drive a 10%
                 improvement in reporting accuracy using Salesforce. </li>
-            <li>Examined patterns in user-submitted feedback and flagged significant compliance issues, resulting in the
-                implementation of new guidelines that reduced policy violations by approximately 15 incidents monthly.</li>
             <li>Conducting in-depth analysis of 1,000+ flagged entries weekly, identifying trends that addressed
                 operational bottlenecks, improving efficiency across moderation systems.</li>
-            <li>Continuously provide actionable insights on moderation tools and best practices, empowering team members
-                to enhance efficiency, contributing to a 15% increase in productivity and improved content compliance
-                rates.</li>
         </ul>
 
         <div class="job-header">
@@ -238,11 +244,7 @@
         </div>
         <div class="company-name">AI-powered conversational agent for business startup consulting</div>
         <ul class="job-description">
-            <li>Architected and deployed an intelligent conversational AI agent utilizing GROQ API, delivering real-time business consulting and startup guidance comparable to ChatGPT, resulting in 50% faster response times for user queries.</li>
-            <li>Engineered a high-performance backend with FastAPI, achieving sub-100ms API response times and supporting concurrent user interactions with minimal latency, handling 500+ simultaneous sessions. </li>
-            <li>Developed a modern, responsive frontend using Next.js and React.js, implementing server-side rendering (SSR) for optimized load times and enhanced SEO, improving user engagement by 45%. </li>
-            <li>Integrated advanced AI capabilities for business use cases including market analysis, business plan generation, and strategic recommendations, increasing user satisfaction scores to 92%.</li>
-            <li>Implemented scalable infrastructure with automated deployment on Vercel, ensuring 99.9% uptime and seamless updates, reducing deployment time by 70% compared to traditional hosting solutions.</li>
+            <li>Architected and deployed an intelligent conversational AI agent utilizing GROQ API, delivering real-time business consulting and startup guidance comparable to ChatGPT.</li>
         </ul>
 
         <div class="job-header">
@@ -252,11 +254,7 @@
         </div>
         <div class="company-name">Tenant and landlord management system</div>
         <ul class="job-description">
-            <li>Analyzed user-generated content trends, identifying critical risk factors and actionable insights that
-                enhanced compliance strategies for over 200 landlord-tenant interactions in a six-month period.</li>
-            <li>Conducted detailed assessments of user-generated content, revealing three primary areas needing
-                improvement; recommendations led to increased engagement rates by 25% across tenant communication
-                channels within eight weeks.</li>
+            <li>Engineered a backend-driven property management application that enables landlords to monitor rent payments, manage tenants, track vacancies, and handle billing workflows through a secure and scalable system.</li>
         </ul>
 
         <!-- Education -->
@@ -271,7 +269,7 @@
         </div>
         <div class="education-item">
             <div class="education-left">
-                <div class="degree">BSc.  Computer Science</div>
+                <div class="degree">BSc. Computer Science</div>
                 <div class="university">Jomo Kenyatta University, Nairobi, Kenya</div>
             </div>
             <div class="education-right"></div>
@@ -286,7 +284,7 @@
             <p><strong>Tools:</strong> Strong understanding of version control using Git and GitHub; knowledgeable in
                 containerization tools such as Docker and Kubernetes.</p>
             <p><strong>Other skills:</strong> Proficient in front-end technologies:  HTML, CSS, and React.js;
-                experience with PyCharm, Jupyter Notebook, Visual Studio Code, IntelliJ IDEA.</p>
+                experience with PyCharm, Jupyter Notebook, Visual Studio Code, IntelliJ IDEA. </p>
         </div>
     </div>
 </body>
